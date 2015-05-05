@@ -25,6 +25,11 @@
       "show_comments": false
     },
     "html": {
+      "javascripts": [
+         "http://rawgit.com/oreillymedia/thebe/master/static/main-built.js",
+         "page.js"
+      ],
+      "uuid": "c86e5513-7a86-4608-aed1-496cc523e79d",
       "index": false,
       "toc": false,
       "syntaxhighlighting": false,
