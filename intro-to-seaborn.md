@@ -8,10 +8,21 @@ Matplotlib is a useful tool, but it leaves much to be desired. There are several
 
 The answer to these problems is [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/). Seaborn provides an API on top of matplotlib which uses sane plot & color defaults, uses simple functions for common statistical plot types, and which integrates with the functionality provided by Pandas dataframes.
 
-Let's take a look at Seaborn in action. We'll start by importing seaborn, which by convention is imported as ``sns``.
+Let's take a look at Seaborn in action. We'll start by importing the key libraries we'll need.
 
-We can set the seaborn style as the default matplotlib style by calling ``sns.set()``: after doing this, even simple matplotlib plots will look much better.
-Let's look at a before and after:
+<pre data-code-language="python"
+     data-executable="true"
+     data-type="programlisting">
+from __future__ import print_function, division
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+</pre>
+
+
+Then we import seaborn, which by convention is imported as ``sns``. We can set the seaborn style as the default matplotlib style by calling ``sns.set()``: after doing this, even simple matplotlib plots will look much better. Let's look at a before and after:
 
 <pre data-code-language="python"
      data-executable="true"

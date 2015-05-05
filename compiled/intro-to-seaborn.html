@@ -12,10 +12,18 @@
 
 <p>The answer to these problems is <a href='http://stanford.edu/~mwaskom/software/seaborn/'>Seaborn</a>. Seaborn provides an API on top of matplotlib which uses sane plot &amp; color defaults, uses simple functions for common statistical plot types, and which integrates with the functionality provided by Pandas dataframes.</p>
 
-<p>Let’s take a look at Seaborn in action. We’ll start by importing seaborn, which by convention is imported as <code>sns</code>.</p>
+<p>Let’s take a look at Seaborn in action. We’ll start by importing the key libraries we’ll need.</p>
 
-<p>We can set the seaborn style as the default matplotlib style by calling <code>sns.set()</code>: after doing this, even simple matplotlib plots will look much better.
-Let’s look at a before and after:</p>
+<pre data-code-language='python' data-executable='true' data-type='programlisting'>
+from __future__ import print_function, division
+
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+</pre>
+
+<p>Then we import seaborn, which by convention is imported as <code>sns</code>. We can set the seaborn style as the default matplotlib style by calling <code>sns.set()</code>: after doing this, even simple matplotlib plots will look much better. Let’s look at a before and after:</p>
 
 <pre data-code-language='python' data-executable='true' data-type='programlisting'>
 x = np.linspace(0, 10, 1000)
